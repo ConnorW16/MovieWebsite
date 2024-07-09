@@ -39,7 +39,7 @@ function findContent(){
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer'
+          Authorization: ''
         }
       };
       fetch('https://api.themoviedb.org/3/movie/'+movieID+'?language=en-US', options)
