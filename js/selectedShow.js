@@ -39,7 +39,7 @@ function findContent(){
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkN2ZhZjZhMjdjMmI2M2Y4YWZjOGZiNjA5ZWJhMDU4ZSIsInN1YiI6IjY1Mjk0ZjA5MWYzZTYwMDExYzQ5OTQxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DOlj0BgYx9vWzHficVnFBwSL95hxE4R6FnKDxm7BzHY'
+          Authorization: 'Bearer'
         }
       };
       fetch('https://api.themoviedb.org/3/tv/'+seriesID+'?language=en-US', options)
