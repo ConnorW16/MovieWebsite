@@ -39,7 +39,7 @@ function findContent(){
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer'
+          Authorization: ''
         }
       };
       fetch('https://api.themoviedb.org/3/tv/'+seriesID+'?language=en-US', options)
