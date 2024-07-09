@@ -8,7 +8,7 @@ function searchMovie(){
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer'
+          Authorization: ''
         }
     };
     // COMMENT: This is the initial fetch request
