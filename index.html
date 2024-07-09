@@ -8,16 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main2.css">
         <script src="js/movieFinder.js"></script>
     </head>
     <body>
         <nav class="topnav">
-            <a class="active" href="index.html">Movie Finder</a>
             <a href="topMovies.html">Top Movies</a>
+            <a class="active" href="index.html">Movie Finder</a>
             <a href="topShows.html">Top Shows</a>
         </nav>
 
+        <!-- HTML and JS for the To Top Button -->
         <button onclick="topFunction()" id="toTop" title="To Top">To Top</button>
         <script>
             let myButton = document.getElementById("toTop");
@@ -43,7 +44,7 @@
                     <input type="text" id="moviesearch" placeholder="Search the Movie Database...">
                 </form>
             </div>
-            <div class="resultContainer"id="demo"></div>
+            <div class="resultContainer"id="rContainer"></div>
         </div>
         <div class="footer">
             <div class="TMDB">

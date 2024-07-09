@@ -27,7 +27,7 @@
         color: white;
     }
     body{
-        background-image: url(/connorw/img/filmreelBackground.jpg);
+        background-image: url(../img/filmreelBackground.jpg);
         background-size: cover;
         background-size: 100%;
     }
@@ -514,6 +514,7 @@
         width: 68%;
         min-height: 598px;
         max-height: 598px;
+        color: black;
     }
     .Title{
         font-size: 36px;
@@ -562,6 +563,12 @@
     .RunTime{
         font-size: 28px;
         margin-bottom: 25px;
+    }
+    .AirDate{
+        font-size: 26px;
+        margin-bottom: 25px;
+        margin-bottom: 25px;
+        margin-left: 5px;
     }
     .Overview{
         font-size: 26px;

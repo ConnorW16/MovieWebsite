@@ -8,16 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/topWeek.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="topnav">
-            <a href="index.html">Movie Finder</a>
             <a href="topMovies.html">Top Movies</a>
+            <a href="index.html">Movie Finder</a>
             <a class="active" href="topShows.html">Top Shows</a>
         </nav>
 
+        <!-- HTML and JS for the To Top Button -->
         <button onclick="topFunction()" id="toTop" title="To Top">To Top</button>
         <script>
             let myButton = document.getElementById("toTop");
@@ -39,7 +40,7 @@
         <div class="pageContent">
             <div class="title">Top Shows this Week</div>
             <script src="js/topShows.js"></script>
-            <div class="resultContainer"id="demo">
+            <div class="resultContainer"id="rContainer">
             </div>
         </div>
         <div class="footer">

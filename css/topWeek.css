@@ -1,0 +1,370 @@
+/* Nav Styling */
+nav.topnav {
+    height: 50px;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    background: #333;
+    width: 100%;
+    max-width: 100%;
+    font-size: 22px;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    line-height: 250%;
+}
+nav.topnav a {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: skyblue;
+    color: black;
+}
+#toTop{
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 4px;
+}
+#toTop:hover{
+    background-color: black;
+}
+
+
+/* Main Styling */
+.title{
+    font-size: 36px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: white;
+}
+body{
+    background-image: url(../img/filmreelBackground.jpg);
+    background-size: cover;
+    background-size: 100%;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover{
+    color: white;
+}
+a:active {
+    color: white;
+}
+
+
+/* Result Styling */
+.resultContainer{
+    width: 96%;
+    font-family: 'Kanit', sans-serif;
+    margin: auto;
+}
+.responseBox{
+    width: 100%;
+    height: 755px;
+    background-color: black;
+    margin-bottom: 50px;
+    border: 5px solid white;
+    padding: 5px;
+    display: block;
+}
+    /* Image Box P */
+#ImageBoxP{
+    float: left;
+    width: 27.5%;
+    margin-right: 10px;
+}
+.poster{
+    height: 750px;
+    width: 500px;
+}
+    /* Details Box */
+.detailsBox{
+    float: right;
+    width: 71%;
+    height: 100%;
+}
+#ImageBoxB{
+    float: right;
+    width: 45%;
+}
+.backdrop{
+    width: 100%;
+    float: right;
+}
+        /* Details */
+.Details{
+    height: 50%;
+    width: 100%;
+}
+.Title{
+    font-size: 48px;
+    text-decoration: underline;
+    text-align: center;
+}
+.TagLine{
+    font-size: 36px;
+    text-align: center;
+}
+.Genres{
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+        /* Overview */
+.Overview{
+    height: 46%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.Overview::-webkit-scrollbar{
+    display: none;
+}
+#Overview{
+    /* border-top: 5px dotted white; */
+    font-size: 26px;
+}
+
+
+/* Footer Styling */
+.footer{
+    background-color: #333;
+    width: 100%;
+    height: 180px;
+    float: left;
+    margin-top: 5px;
+    border-radius: 0px 0px 25px 25px;
+}
+.TMDB{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#TMDBlogo{
+    height: 50%;
+    margin-top: 10px;
+}
+#TMDBinfo{
+    height: 20%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    line-height: 300%;
+    text-decoration: underline;
+}
+
+
+/* Media Tags */
+@media only screen and (max-width: 1820px){
+    .poster{
+        width: 465px;
+    }
+}
+@media only screen and (max-width: 1700px){
+    .responseBox{
+        height: 640px;
+    }
+    .poster{
+        height: 637.5px;;
+        width: 425px;
+    }
+}
+@media only screen and (max-width: 1550px){
+    .poster{
+        width: 395.25px;
+    }
+    .Title{
+        font-size: 40px;
+    }
+    .TagLine{
+        font-size: 30px;
+    }
+    .Genres{
+        font-size: 22px;
+    }
+    #Overview{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .responseBox{
+        height: 545px;
+    }
+    .poster{
+        height: 541.8px;
+        width: 361.25px;
+    }
+    .Title{
+        font-size: 32px;
+    }
+    .TagLine{
+        font-size: 26px;
+    }
+    .Genres{
+        font-size: 20px;
+    }
+    #Overview{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1320px){
+    .poster{
+        width: 336px;
+    }
+}
+@media only screen and (max-width: 1220px){
+    .responseBox{
+        height: 460px;
+    }
+    .poster{
+        height: 460px;
+        width: 307px;
+    }
+    .Title{
+        font-size: 32px;
+    }
+    .TagLine{
+        font-size: 26px;
+    }
+    .Genres{
+        font-size: 20px;
+    }
+    #Overview{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .poster{
+        width: 285.5px;
+    }
+    .Title{
+        font-size: 28px;
+    }
+    .TagLine{
+        font-size: 22px;
+    }
+    .Genres{
+        font-size: 18px;
+    }
+    #Overview{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .responseBox{
+        height: 395px;
+    }
+    .poster{
+        height: 391px;
+        width: 261px;
+    }
+    .Title{
+        font-size: 26px;
+    }
+    .TagLine{
+        font-size: 22px;
+    }
+    .Genres{
+        font-size: 16px;
+    }
+    #Overview{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .resultContainer{
+        margin-right: 3.5%;
+    }
+    #ImageBoxP{
+        display: none;
+    }
+    .detailsBox{
+        width: 100%;
+    }
+    #ImageBoxB{
+        width: 45%;
+    }
+    .Title{
+        font-size: 25px;
+    }
+    .TagLine{
+        font-size: 21px;
+    }
+    .Genres{
+        font-size: 17px;
+    }
+    .Overview{
+        height: 40%;
+    }
+    #Overview{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 840px){
+    #ImageBoxB{
+        width: 35%;
+    }
+    .Overview{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 580px){
+    #ImageBoxB{
+        display: none;
+    }
+    .Details{
+        height: 50%;
+    }
+    .Overview{
+        height: 46%;
+        border-top: 5px dotted white;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav.topnav {
+        font-size: 18px;
+        line-height: 250%;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .Title{
+        font-size: 20px;
+    }
+    .TagLine{
+        font-size: 18px;
+    }
+    .Genres{
+        font-size: 16px;
+    }
+    #Overview{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
