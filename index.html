@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/movieFinder.js"></script>
+    </head>
+    <body>
+        <nav class="topnav">
+            <a class="active" href="index.html">Movie Finder</a>
+            <a href="topMovies.html">Top Movies</a>
+            <a href="topShows.html">Top Shows</a>
+        </nav>
+
+        <button onclick="topFunction()" id="toTop" title="To Top">To Top</button>
+        <script>
+            let myButton = document.getElementById("toTop");
+            window.onscroll = function(){scrollFunction()};
+            function scrollFunction(){
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                    myButton.style.display = "block";
+                }
+                else{
+                    myButton.style.display = "none";
+                }
+            }
+            function topFunction(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <div class="pageContent">
+            <div class="title">Movie Finder</div>
+            <div class="searchbar">
+                <form onsubmit="return searchMovie()">
+                    <input type="text" id="moviesearch" placeholder="Search the Movie Database...">
+                </form>
+            </div>
+            <div class="resultContainer"id="demo"></div>
+        </div>
+        <div class="footer">
+            <div class="TMDB">
+                <img id="TMDBlogo" src="img\tmdb primary short.svg" alt="The Movie Database Logo"></img>
+                <div id="TMDBinfo">
+                    <a href="https://www.themoviedb.org">Data pulled from The Movie Database</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
